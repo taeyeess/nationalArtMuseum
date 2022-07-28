@@ -1,0 +1,107 @@
+
+.menu .sub_nav {
+  width: 100%;
+  padding-top: 5px;
+  display: flex;
+  justify-content: space-around;
+}
+.menu .sub_nav li {
+}
+
+.sub_nav li a{
+  color:#000;
+  font-size: 12px;
+}
+
+#sub_contents{
+  width: 100%;
+  height: auto;
+  background-color: aquamarine;
+}
+
+#sub_img{
+  width: 100%;
+  height: 800px;
+  background: url(../images/main.png) 50% no-repeat;
+  background-size: cover;
+}
+
+#explain{
+  
+}
+#ex_txt{
+  width: 100%;
+  height: 1000px;
+  background:url(../images/사본\ -서브2.png) 50% no-repeat;
+  background-size: cover;
+}
+
+#sub_footer {
+  width: 100%;
+  height: auto;
+}
+
+#f_bottom{
+  width: 100%;
+  background-color: rgb(88, 88, 88);
+}
+
+#f_nav {
+  width: 1640px;
+  height: 450px;
+  padding: 50px 150px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  font-size: 15px;  
+  display: flex;
+  justify-content: right;
+}
+
+#f_nav a {
+  color: rgb(197, 197, 197);
+}
+#f_nav .item_1 {
+  margin-right: 80px;
+}
+
+#f_nav .item_1 ul li {
+  margin-bottom: 10px;
+}
+#f_nav .item_2 {
+  margin-right: 80px;
+}
+
+#f_nav .item_2 ul li {
+  margin-bottom: 10px;
+}
+
+#f_nav .item_3 ul li {
+  margin-bottom: 10px;
+}
+
+#f_address {
+  width: 1640px;
+  height: 100px;
+  
+  margin:0 auto;
+}
+
+#f_address .f_logo{
+  margin-left:15px;
+  float: left;
+}
+#f_address .f_logo > img {
+  width: 90px;
+}
+#f_address .address {
+  float: left;
+  padding:20px 0 0 15px;
+  box-sizing: border-box;
+  font-style: normal;
+  color: rgb(173, 173, 173);
+}
+
+#sub_f_top{
+  display: none;
+}
+
