@@ -107,29 +107,91 @@
 }
 
 
-/* 컨텐츠 */
-#sub_contents{
-  width: 100%;
-  height: auto;
-  background-color: aquamarine;
-}
-
-#sub_img{
+/* 서브 메인 페이지 */
+#sub_main{
   width: 100%;
   height: 800px;
-  background: url(../images/main.png) 50% no-repeat;
+  background: url(https://monthlyart.com/wp-content/uploads/2022/04/%ED%99%94%EB%A9%B4-%EC%BA%A1%EC%B2%98-2022-04-28-104007-1500x757.jpg) 50% no-repeat;
   background-size: cover;
+  position: relative;
 }
 
-#explain{
-  
+#sub_main h2{
+  padding:300px 0 30px 150px;
+  font-size: 80px;
+  color:rgb(219, 219, 219);
+  letter-spacing: 8px;
+  text-shadow: 5px 5px 8px rgb(0, 0, 0);
 }
-#ex_txt{
-  width: 100%;
-  height: 1000px;
-  background:url(../images/사본\ -서브2.png) 50% no-repeat;
-  background-size: cover;
+
+#sub_main p{
+  padding-left: 170px;
+  font-size: 25px;
+  color:rgb(167, 173, 177);
 }
+
+#sub_main span{
+  padding-left: 170px;
+  font-size: 20px;
+  color:rgb(181, 181, 181);
+}
+
+#sub_main .btn {
+  position: absolute;
+  top: 600px;
+  right: 200px;
+  width: 500px;
+  height: 50px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.5) ;
+}
+
+#sub_main .btn .icon li {
+  float: left;
+  margin-right: 20px;
+  line-height: 50px;  
+}
+
+#sub_main .btn .icon li > img {
+  width: 20px;
+  padding-top: 13px;
+  cursor: pointer;
+}
+
+
+#sub_main .btn .list > li {
+  float: left;  
+  width: 100px;
+  margin-right: 40px;  
+  padding: 10px;  
+  text-align: center;
+  font-size: 16px;
+  color:#fff;
+  opacity: 0.5;
+  text-shadow:2px 2px 5px rgb(0, 0, 0);  
+  cursor: pointer;   
+}
+
+#sub_main .btn .list li:last-child {
+  margin-right: 0;
+}
+
+#sub_main .btn .list li.on{
+  font-weight: bold;
+  opacity: 1;
+  color: rgb(33, 33, 33);
+  text-shadow: 0px 0px 0px ;    
+}
+
+/* 서브 컨텐츠 */
+#sub_contents{
+  width: 90%;
+  height: 1500px; 
+  margin: 0 auto; 
+  background:url(../images/sub_contents2.png) 50% no-repeat;
+  background-size: contain; 
+}
+
 
 #sub_footer {
   width: 100%;

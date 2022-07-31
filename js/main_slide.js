@@ -1,35 +1,42 @@
-const slides = document.querySelector('#main_img'); //전체 슬라이드 컨테이너
-const slideImg = document.querySelectorAll('#main_img .slide'); //모든 슬라이드들
-let currentIdx = 0; //현재 슬라이드 index
-const slideCount = slideImg.length; // 슬라이드 개수
-const prev = document.querySelector('.prev'); //이전 버튼
-const next = document.querySelector('.next'); //다음 버튼
-const slideWidth = 1920; //한개의 슬라이드 넓이
+$(document).ready(function(){
+    var current = 0;
+    $("#btn .list li").eq(current).addClass("on");
+    
+    $("#btn .list li").click(function(){
+        $("#btn .list li").removeClass("on");
+        var i = $(this).index();
+        slideTarget(i);
+    });
 
+    $("#btn .icon .next").click(function(){
+        if(current < 3){
+            current++;
+            $("#btn .list li").removeClass("on");
+            slideTarget(current);
+        }else{
+            current = 0;
+            $("#btn .list li").removeClass("on");
+            slideTarget(current);
+        }
+    });
 
-//전체 슬라이드 컨테이너 넓이 설정
-slides.style.width = slideWidth  * slideCount + 'px';
+    $("#btn .icon .prev").click(function(){
+        if(current > 0){
+            current--;
+            $("#btn .list li").removeClass("on");
+            slideTarget(current);
+        }else{
+            current = 3;
+            $("#btn .list li").removeClass("on");
+            slideTarget(current);
+        }
+    });
 
-function moveSlide(num) {
-slides.style.left = -num * 1920 + 'px';
-currentIdx = num;
-}
-
-prev.addEventListener('click', function () {
-/*첫 번째 슬라이드로 표시 됐을때는 
-이전 버튼 눌러도 아무런 반응 없게 하기 위해 
-currentIdx !==0일때만 moveSlide 함수 불러옴 */
-
-if (currentIdx !== 0) moveSlide(currentIdx - 1);
+    function slideTarget(n){
+        var pos = n * -1920 + "px";
+        current = n;
+        $("#main_img").animate({left:pos}, function(){
+            $("#btn .list li").eq(n).addClass("on");
+        } );
+    }
 });
-
-next.addEventListener('click', function () {
-/* 마지막 슬라이드로 표시 됐을때는 
-다음 버튼 눌러도 아무런 반응 없게 하기 위해
-currentIdx !==slideCount - 1 일때만 
-moveSlide 함수 불러옴 */
-if (currentIdx !== slideCount - 1) {
-    moveSlide(currentIdx + 1);
-}
-});
-
