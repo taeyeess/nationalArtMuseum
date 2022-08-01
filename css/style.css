@@ -366,13 +366,15 @@
   left: 0px;
   overflow: hidden;
   /* background-color: aqua; */  
+  transition: left 0.8s;
 }
 
 #exhi_soon ul li{
   width: 1400px;   
   display: flex;
   justify-content: space-between;
-  align-items: center;      
+  align-items: center;
+  
 }
 
 #exhi_soon ul li .text{
