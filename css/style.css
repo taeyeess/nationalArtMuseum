@@ -164,7 +164,7 @@
   font-size: 60px;
   margin-bottom: 10px;
   color: rgb(255, 255, 255);
-  opacity: 0.4;
+  opacity: 0.7;
   text-shadow: 3px 2px 5px rgb(0, 0, 0);
 }
 
@@ -173,7 +173,7 @@
   font-style: italic;
   padding: 15px 0 0 15px;
   color: #a0a0a0;
-  box-sizing: border-box;
+  text-shadow: 2px 2px 3px #282828;
 }
 
 #main_img .txt > span {
@@ -201,8 +201,14 @@
   width: 100%;
   height: 1080px;
   /* 가로세로 꼭 주세요... */
-  background: url(https://www.mmca.go.kr/upload/main/2022/05/2022050203083183614609.png) 50% no-repeat;
+  background: url(../images/main2.jpg) 50% no-repeat;
   background-size: cover;  
+}
+
+#main_img .slide2 .txt{
+  width: 800px;
+  float: left;
+  margin: 400px 0 0 300px;
 }
 
 #main_img .slide3 {
@@ -211,8 +217,29 @@
   left: 3840px;
   width: 100%;
   height: 1080px;
-  background: url(https://www.mmca.go.kr/upload/exhibition/2022/04/dse_2022041101102915615728.jpg) 50% no-repeat;
+  background: url(../images/main3.jpeg.crdownload) 50% no-repeat;
   background-size: cover; 
+}
+
+#main_img .slide3 .txt > h2{
+  opacity: 0.7;
+}
+
+#main_img .slide3 .txt > p {
+  font-size: 23px;
+  font-style: italic;
+  padding: 15px 0 0 15px;
+  color:#282828;
+  text-shadow: 2px 2px 3px #6c5036; 
+    
+}
+
+#main_img .slide3 .txt > span {
+  display: block;
+  padding: 10px 0 50px 15px;
+  font-size: 16px;
+  color: #282828;
+  font-weight: 600;  
 }
 
 #main_img .slide4 {
@@ -221,7 +248,7 @@
   left: 5760px;
   width: 100%;
   height: 1080px;
-  background: url(https://www.mmca.go.kr/upload/exhibition/2022/04/dse_2022041101130134915617.jpg) 50% no-repeat;
+  background: url(../images/27795E4A56BD4C601D.jpg) 50% no-repeat;
   background-size: cover; 
 }
 /* @keyframes ani-01 {
@@ -229,6 +256,27 @@
 		background-position: -1920px 0;
 	}
 } */
+
+#main_img .slide4 .txt > h2{
+  opacity: 0.8;
+}
+
+/* #main_img .slide4 .txt > p {
+  font-size: 23px;
+  font-style: italic;
+  padding: 15px 0 0 15px;
+  text-shadow: 2px 2px 4px rgb(115, 115, 115);
+  color: #2a2a2a;
+  font-weight: 600;  
+} */
+
+#main_img .slide4 .txt > span {
+  display: block;
+  padding: 10px 0 50px 15px;
+  font-size: 16px;
+  color: #282828;
+  font-weight: 600;  
+}
 
 #btn {
   position: absolute;
@@ -379,7 +427,7 @@
 #ex_btn {
   position: absolute;
   top: 750px;
-  left: 220px;
+  left: 280px;
   width: 360px;
   height: 50px;
   padding-bottom: 10px;
@@ -405,10 +453,15 @@
   margin-right: 40px;  
   padding:10px;  
   text-align: center;
-  color:rgb(0, 0, 0);   
+  color:rgb(148, 148, 148);   
   cursor: pointer;
   font-weight: bold;  
 }
+
+#ex_btn .list > li.active{
+  color:rgb(0, 0, 0);
+}
+
 
 #ex_btn .list li:last-child {
   margin-right: 0;
@@ -1805,6 +1858,7 @@
     position: absolute;
     left: 0px;
     overflow: hidden;
+    transition: all 1s ease-in-out;  
     /* background-color: aqua;     */
   }
 
@@ -1812,7 +1866,8 @@
     width: 80%;   
     display: flex;
     justify-content: space-between;
-    align-items: center;      
+    align-items: center;
+    transition: all 1s ease-in-out;      
   }
 
   #exhi_soon ul li .text{
@@ -1856,10 +1911,10 @@
 
   #exhi_soon ul li .poster{
     width: 150%;
-    padding: 50px;  
+    padding: 0px;  
   }
 
-  #exhi_soon ul li img{
+  #exhi_soon ul li .poster img{
     width: 32%;    
   }
    
