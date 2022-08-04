@@ -20,8 +20,6 @@ function exmoveSlide(num) {
   // console.log(exSlides);
 }
 
-
-
 exPrev.addEventListener('click', function () {
   /*첫 번째 슬라이드로 표시 됐을때는 
   이전 버튼 눌러도 아무런 반응 없게 하기 위해 
