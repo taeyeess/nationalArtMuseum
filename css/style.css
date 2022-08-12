@@ -6,7 +6,7 @@
 /* 메인 */
 #main {
   width: 100%;
-  height: 1080px;
+  height: 900px;
   position: relative;
   overflow: hidden;  
 }
@@ -146,7 +146,7 @@
 /* 메인이미지 */
 #main_img {
   width: 1920px;
-  height: 1080px;
+  /* height: 1080px; */
   position: relative;  
 }
 
@@ -189,8 +189,8 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 1080px;
-  background: url(../images/main_img.jpg) 50% no-repeat;
+  height: 900px;
+  background: url(../images/main_img.jpg) 50% 0% no-repeat;
   background-size: cover;
 }
 
@@ -199,7 +199,7 @@
   top: 0;
   left: 1920px;
   width: 100%;
-  height: 1080px;
+  height: 900px;
   /* 가로세로 꼭 주세요... */
   background: url(../images/main2.jpg) 50% no-repeat;
   background-size: cover;  
@@ -216,8 +216,8 @@
   top: 0;
   left: 3840px;
   width: 100%;
-  height: 1080px;
-  background: url(../images/main3.jpeg.crdownload) 50% no-repeat;
+  height: 900px;
+  background: url(../images/main3.jpg) 50% no-repeat;
   background-size: cover; 
 }
 
@@ -229,8 +229,8 @@
   font-size: 23px;
   font-style: italic;
   padding: 15px 0 0 15px;
-  color:#282828;
-  text-shadow: 2px 2px 3px #6c5036; 
+  color: #b8b6b4;
+  text-shadow: 2px 2px 3px #282828; 
     
 }
 
@@ -247,7 +247,7 @@
   top: 0;
   left: 5760px;
   width: 100%;
-  height: 1080px;
+  height: 900px;
   background: url(../images/27795E4A56BD4C601D.jpg) 50% no-repeat;
   background-size: cover; 
 }
